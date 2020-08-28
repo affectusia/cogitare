@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_registroPaciente">
+
+    <fragment
+        android:id="@+id/nav_registroPaciente"
+        android:name="com.sae.sae.ui.paciente.PacienteFragment"
+        android:label="@string/menu_registroinfo"
+        tools:layout="@layout/lista_pacientes"/>
+
+    <fragment
+        android:id="@+id/nav_viasAereas"
+        android:name="com.sae.sae.ui.perguntas.PerguntaFragment"
+        android:label="@string/menu_avaliacaoABC"
+        tools:layout="@layout/fragment_pergunta"/>
+
+    <fragment
+        android:id="@+id/nav_AvaliacaoResp"
+        android:name="com.sae.sae.ui.perguntas.PerguntaFragmentAvaResp"
+        android:label="@string/menu_avaliacaoABC"
+        tools:layout="@layout/fragment_pergunta"/>
+
+    <fragment
+        android:id="@+id/nav_viasCirculatorias"
+        android:name="com.sae.sae.ui.perguntas.PerguntaFragmentAvaCirculacao"
+        android:label="@string/menu_avaliacaoABC"
+        tools:layout="@layout/fragment_pergunta"/>
+
+    <fragment
+        android:id="@+id/nav_exameNeuro"
+        android:name="com.sae.sae.ui.perguntas.PerguntaFragmentNeurologico"
+        android:label="@string/menu_exameFisico"
+        tools:layout="@layout/fragment_pergunta"/>
+
+    <fragment
+        android:id="@+id/nav_SinaisVitais"
+        android:name="com.sae.sae.ui.perguntas.PerguntaFragmentSinaisVitais"
+        android:label="@string/menu_avaliacaoInicial"
+        tools:layout="@layout/fragment_pergunta"/>
+
+    <fragment
+        android:id="@+id/nav_exameResp"
+        android:name="com.sae.sae.ui.perguntas.PerguntaFragmentRespiratorio"
+        android:label="@string/menu_exameFisico"
+        tools:layout="@layout/fragment_pergunta"/>
+
+    <fragment
+        android:id="@+id/nav_exameCardio"
+        android:name="com.sae.sae.ui.perguntas.PerguntaFragmentCardiovascular"
+        android:label="@string/menu_exameFisico"
+        tools:layout="@layout/fragment_pergunta"/>
+
+    <fragment
+        android:id="@+id/nav_exameUrinario"
+        android:name="com.sae.sae.ui.perguntas.PerguntaFragmentUrinario"
+        android:label="@string/menu_exameFisico"
+        tools:layout="@layout/fragment_pergunta"/>
+
+    <fragment
+        android:id="@+id/nav_sitioCirurgico"
+        android:name="com.sae.sae.ui.perguntas.PerguntaFragmentSitioCirurgico"
+        android:label="@string/menu_exameFisico"
+        tools:layout="@layout/fragment_pergunta"/>
+
+    <fragment
+        android:id="@+id/nav_indiceAK"
+        android:name="com.sae.sae.ui.perguntas.PerguntaIndiceAK"
+        android:label="@string/menu_indiceAK"
+        tools:layout="@layout/fragment_pergunta"/>
+
+    <fragment
+        android:id="@+id/nav_registoInfoTransOperatorias"
+        android:name="com.sae.sae.ui.perguntas.PerguntaTransoperatorias"
+        android:label="@string/menu_registroinfo"
+        tools:layout="@layout/fragment_pergunta"/>
+
+</navigation>
